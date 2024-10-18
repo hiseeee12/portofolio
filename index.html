@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Portofolio Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <p>Nama saya Mohammad Hisyam Halwani, seorang Mahasiswa. Saya memiliki pengalaman di bidang memancing.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Proyek Saya</h2>
+            <div class="project" onclick="alert('Proyek 1: Toko Online 1')">
+                <h3>Proyek 1</h3>
+                <p>Deskripsi singkat tentang proyek 1.</p>
+            </div>
+            <div class="project" onclick="alert('Proyek 2: Deskripsi proyek 2')">
+                <h3>Toko Online</h3>
+        <p>Ini adalah toko online saya yang menampilkan berbagai produk. <a href="olshop.html">Kunjungi Toko Online</a></p>
+            </div>
+            <div class="project" onclick="alert('Proyek 3: Deskripsi proyek 3')">
+                <h3>Proyek 3</h3>
+                <p>Deskripsi singkat tentang proyek 3.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Kontak Saya</h2>
+            <form id="contactForm" onsubmit="return submitForm()">
+                <input type="text" id="name" placeholder="Nama" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="message" placeholder="Pesan" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 [Nama Anda]. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

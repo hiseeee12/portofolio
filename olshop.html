@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online Sederhana</title>
+    <link rel="stylesheet" href="stylesolshop.css">
+</head>
+<body>
+    <header>
+        <h1>Toko Online Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#cart">Keranjang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="products">
+            <h2>Produk Kami</h2>
+            <div class="product">
+                <h3>Produk 1</h3>
+                <p>Deskripsi singkat tentang produk 1.</p>
+                <span>Harga: Rp100.000</span>
+                <button onclick="addToCart('Produk 1', 100000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <h3>Produk 2</h3>
+                <p>Deskripsi singkat tentang produk 2.</p>
+                <span>Harga: Rp150.000</span>
+                <button onclick="addToCart('Produk 2', 150000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <h3>Produk 3</h3>
+                <p>Deskripsi singkat tentang produk 3.</p>
+                <span>Harga: Rp200.000</span>
+                <button onclick="addToCart('Produk 3', 200000)">Tambah ke Keranjang</button>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Keranjang Belanja</h2>
+            <ul id="cart-items"></ul>
+            <p id="total"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Toko Online Saya. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="scriptolshop.js"></script>
+</body>
+</html>
