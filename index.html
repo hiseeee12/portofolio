@@ -1,60 +1,80 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mohammad Hisyam Halwani Personal Website</title>
+<style>
+    .social-icons {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+    .social-icons li {
+      display: inline;
+      margin: 10px;
+    }
+    .social-icons li a {
+      font-size: 30px;
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .whatsapp:hover {
+      color: #25D366; /* Warna hijau khas WhatsApp */
+    }
+
+    .instagram:hover {
+      color: #E4405F; /* Warna khas Instagram */
+    }
+
+    .facebook:hover {
+      color: #1877F2; /* Warna biru khas Facebook */
+    }
+
+    .github:hover {
+      color: #000; /* Warna hitam untuk GitHub */
+    }
+</style>
 </head>
+
 <body>
-    <header>
-        <h1>Portofolio Saya</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#projects">Proyek</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="cv-dian.pdf">Download CV</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="about.html">About me</a>
+    </nav>
+
+    <hr />
+
+    <header style="text-align: center;">
+        <img src="pp-removebg-preview.png" width="200" height="200" style="border-radius: 50%;"/>
+        <h1>Mohammad Hisyam Halwani</h1>
+        <p>(Web Developer)</p>
     </header>
-    
-    <main>
-        <section id="about">
-            <h2>Tentang Saya</h2>
-            <p>Nama saya kontyol, seorang Mahasiswa. Saya memiliki pengalaman di bidang memancing.</p>
-        </section>
-        
-        <section id="projects">
-            <h2>Proyek Saya</h2>
-            <div class="project" onclick="alert('Proyek 1: Toko Online 1')">
-                <h3>Proyek 1</h3>
-                <p>Deskripsi singkat tentang proyek 1.</p>
-            </div>
-            <div class="project" onclick="alert('Proyek 2: Deskripsi proyek 2')">
-                <h3>Toko Online</h3>
-        <p>Ini adalah toko online saya yang menampilkan berbagai produk. <a href="olshop.html">Kunjungi Toko Online</a></p>
-            </div>
-            <div class="project" onclick="alert('Proyek 3: Deskripsi proyek 3')">
-                <h3>Proyek 3</h3>
-                <p>Deskripsi singkat tentang proyek 3.</p>
-            </div>
-        </section>
 
-        <section id="contact">
-            <h2>Kontak Saya</h2>
-            <form id="contactForm" onsubmit="return submitForm()">
-                <input type="text" id="name" placeholder="Nama" required>
-                <input type="email" id="email" placeholder="Email" required>
-                <textarea id="message" placeholder="Pesan" required></textarea>
-                <button type="submit">Kirim</button>
-            </form>
-        </section>
-    </main>
+    <hr />
 
-    <footer>
-        <p>&copy; 2024 brantas. Semua hak dilindungi.</p>
+    <article style="text-align: center;">
+        <h2>Overview</h2>
+        <p>
+            Hola, perkenalkan nama saya Mohammad Hisyam Halwani, saya adalah seorang mahasiswa semester 5 di Universitas Sains Al-Qur'an Wonosobo. Program pendidikan yang saya tempuh adalah teknik informatika di fakultas teknik dan ilmu komputer.
+        </p>
+    </article>
+
+    <ul class="social-icons">
+        <li><a href="https://wa.me/nomor-anda" target="_blank" title="WhatsApp saya" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+        <li><a href="https://www.instagram.com/username_anda/" target="_blank" title="Instagram saya" class="instagram"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/username_anda" target="_blank" title="Facebook saya" class="facebook"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://github.com/username_anda" target="_blank" title="GitHub saya" class="github"><i class="fab fa-github"></i></a></li>
+    </ul>
+
+    <hr>
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2024 Mohammad Hisyam Halwani.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
